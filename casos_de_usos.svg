@@ -1,17 +1,14 @@
-@startuml
-left to right direction
+usecaseDiagram
+    title Sistema de Controle
 
-actor Usuário
-actor "Administrador" as Admin
+    Actor Usuário
+    Actor Administrador as "Administrador"
 
-rectangle "Sistema de Controle" {
     Usuário --> (Registrar Usuário)
     Usuário --> (Editar Informações do Usuário)
     Usuário --> (Excluir Conta de Usuário)
     Usuário --> (Visualizar Dados do Usuário)
 
-    Admin --> (Adicionar Novo Usuário)
-    Admin --> (Editar Informações de Outro Usuário)
-    Admin --> (Excluir Conta de Outro Usuário)
-}
-@enduml
+    "Administrador" --> (Adicionar Novo Usuário)
+    "Administrador" --> (Editar Informações de Outro Usuário)
+    "Administrador" --> (Excluir Conta de Outro Usuário)
