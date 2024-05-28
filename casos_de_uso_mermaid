@@ -1,0 +1,14 @@
+usecaseDiagram
+    title Sistema de Controle
+
+    Actor Usuário
+    Actor Administrador as "Administrador"
+
+    Usuário --> (Registrar Usuário)
+    Usuário --> (Editar Informações do Usuário)
+    Usuário --> (Excluir Conta de Usuário)
+    Usuário --> (Visualizar Dados do Usuário)
+
+    "Administrador" --> (Adicionar Novo Usuário)
+    "Administrador" --> (Editar Informações de Outro Usuário)
+    "Administrador" --> (Excluir Conta de Outro Usuário)
